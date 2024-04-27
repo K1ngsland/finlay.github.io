@@ -1,27 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Full Screen Image</title>
-<style>
-    body, html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        overflow: hidden;
-    }
-    .fullscreen-img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: contain; /* Ensures the image fits inside the container without stretching */
-    }
-</style>
+    <title>Art Gallery - Home</title>
+    <meta property="og:title" content="Art Gallery - Home">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta property="twitter:card" content="summary_large_image">
+    <!-- Reset CSS -->
+    <style data-tag="reset-style-sheet">
+        /* Reset styles */
+    </style>
+    <!-- Default CSS -->
+    <style data-tag="default-style-sheet">
+        /* Default styles */
+    </style>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" data-tag="font">
+    <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <img class="fullscreen-img" src="your-image.jpg" alt="Full Screen Image">
+    <div class="home-container">
+        <header class="home-navbar">
+            <span class="home-logo">Art Gallery</span>
+            <div class="home-desktop-menu">
+                <nav class="home-nav">
+                    <button class="home-button button-clean button">Browse Gallery</button>
+                    <button class="home-button1 button-clean button">About</button>
+                    <button class="home-button2 button-clean button">Contact</button>
+                </nav>
+            </div>
+            <div class="home-btn-group">
+                <div class="home-socials">
+                    <button class="social button"><img alt="Twitter" src="public/Icons/twitter.svg" class="home-image"></button>
+                    <button class="social button"><img alt="Discord" src="public/Icons/discord.svg" class="home-image01"></button>
+                </div>
+                <button class="button">View Gallery</button>
+            </div>
+        </header>
+        <section class="home-hero">
+            <div class="home-heading">
+                <h1 class="home-header">Discover Unique Artworks</h1>
+                <p class="home-caption">Explore our collection of original artworks created by talented artists.</p>
+            </div>
+            <div class="home-buttons">
+                <button class="button">View Gallery</button>
+                <button class="home-learn button-clean button">Learn More</button>
+            </div>
+        </section>
+        <section class="home-description">
+            <img alt="Divider" src="public/hero-divider-1500w.png" class="home-divider-image">
+            <div class="home-container3">
+                <div class="home-description01">
+                    <div class="home-content">
+                        <p class="home-paragraph">Our art gallery showcases a diverse collection of paintings, sculptures, and digital artworks.</p>
+                        <p class="home-paragraph1">Browse through our curated selection and find the perfect piece to add to your collection.</p>
+                    </div>
+                    <div class="home-links">
+                        <a href="#" class="home-link button-link button"><span>Follow us on Twitter</span><img alt="Arrow" src="public/Icons/arrow.svg" class="home-arrow"></a>
+                        <a href="#" class="home-link01 button-link button"><span>Join us on Discord</span><img alt="Arrow" src="public/Icons/arrow.svg" class="home-arrow1"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Additional sections and content can be added here -->
+    </div>
 </body>
 </html>
+
